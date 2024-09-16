@@ -1,0 +1,52 @@
+#container{
+    display: flex;
+    width: 100%;
+}
+#users_main{
+    width: 100%;
+    max-width: 25%;
+}
+.user{
+    background-color: aliceblue;
+    border: 1px solid #000;
+    padding: 7px;
+    cursor: pointer;
+}
+.user:hover{
+    background-color: antiquewhite;
+}
+.selected_user{
+    background-color: red;
+}
+#message_area_main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 40%;
+}
+#btnGonder{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.mesajlarin_tamami{
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid blue;
+}
+.mesaj_ekle{
+    color: red;
+}
+#oda_olusturma{
+    width: 100%;
+    max-width: 25%;
+}
+
+.new_oda{
+    background-color: aliceblue;
+    border: 1px solid #000;
+    padding: 7px;
+    cursor: pointer;
+}
+.new_oda:hover{
+    background-color: antiquewhite;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="signalr.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+    
+
+    <input type="text" placeholder="Nicname" id="txtnicname">
+    <button type="button" id="btnGirisYap">
+        Giris Yap
+    </button>
+
+    <!--- birisi giris yapinca mesaj alinan alan --->
+    <div id="ClientDurumMesajlari"></div>
+    <hr>
+    <!-- Icerde kilerin oldugunu gosteren alan --->
+     <div id="container">
+        <div id="users_main">
+            <div class="user">All Users</div>
+            <div id="users"></div>
+        </div>
+        <div id="message_area_main">
+            <textarea rows="5" name="" id="message_area"></textarea>
+            <button id="btnGonder">Send</button>
+
+            <!--- baskasindan gelen mesajlari yazdirdigim yer -->
+            <div class="mesajlarin_tamami">
+                <!-- kendi gonderdigim mesajlari ekrana yazma islemini js ile yap. hub a gerek yok --->
+            </div>
+        </div>
+        <div id="oda_olusturma">
+            <input type="text" placeholder="Oda Ismi" id="oda_ismi">
+            <button id="oda_olustur">Oda Olustur</button>
+            <select multiple id="odalar_listesi">
+                <option disabled class="new_oda">All Groups</option>
+            </select>
+            <button id="odalara_katil">Katil</button>
+        </div>
+     </div>
+
+
+</body>
+</html>
+<!--
+Client Site yapilmasi gereken ara islemler
+1-) herhangi bir cient ismini yazip giris yapabilecegi bir ara alan olustur. Login sayfasi gibi
+2-) bu kisi giris yap dedikten sonra hub id si gelince kisiyi ilgili 2. sayfaya at
+
+-->
