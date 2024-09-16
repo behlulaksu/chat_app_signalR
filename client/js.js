@@ -96,6 +96,7 @@ $(document).ready(
         );
 
         /* herhangi bir gurupta kimler var diye baktigimiz alan */
+        //bu alanda kaldim
 
     }
 );
